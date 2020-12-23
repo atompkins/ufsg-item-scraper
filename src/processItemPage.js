@@ -52,7 +52,7 @@ function processItemPage({ config, data }) {
   const tableRows = $('table[width="800"] table tbody').children();
   const nameRow = tableRows.eq(0);
   const name = nameRow.find('b').text();
-  const rarity = /\((.*)\)/.exec(nameRow.text())[1];
+  const rarity = /.*\((.*)\)/.exec(nameRow.text())[1];
   return {
     id,
     name,

@@ -50,9 +50,9 @@ function processItemPage({ config, data }) {
   const id = Number(/&item_id=(\d+)&/.exec(config.url)[1]);
   const $ = cheerio.load(data);
   const tableRows = $('table[width="800"] table tbody').children();
-  const nameRow = tableRows.eq(0);
-  const name = nameRow.find('b').text();
-  const rarity = /.*\((.*)\)/.exec(nameRow.text())[1];
+  const nameCell = tableRows.eq(0).children().eq(0);
+  const name = nameCell.children().eq(0).text();
+  const rarity = /\((.*)\)/.exec(nameCell.contents().eq(1).text())[1];
   return {
     id,
     name,

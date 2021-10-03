@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "UFSG Item Scraper - guide.fallensword.com",
   "engines": {
-    "node": "14.x"
+    "node": "16.x"
   },
   "main": "scraper.js",
   "scripts": {
@@ -20,13 +20,13 @@
   },
   "homepage": "https://github.com/atompkins/ufsg-item-scraper#readme",
   "devDependencies": {
-    "eslint": "^7.17.0",
+    "eslint": "^7.32.0",
     "eslint-config-airbnb-base": "^14.2.1",
-    "eslint-plugin-import": "^2.22.1"
+    "eslint-plugin-import": "^2.24.2"
   },
   "dependencies": {
-    "axios": "^0.21.1",
+    "axios": "^0.22.0",
     "cheerio": "^1.0.0-rc.5",
-    "sqlite3": "^5.0.0"
+    "sqlite3": "^5.0.2"
   }
 }

@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "UFSG Item Scraper - guide.fallensword.com",
   "engines": {
-    "node": "16.x"
+    "node": "12.x"
   },
   "main": "scraper.js",
   "scripts": {

@@ -3,10 +3,11 @@ const cheerio = require('cheerio');
 const valNext = ($e) => $e.closest('td').next().text();
 const valOver = ($e) => $e.closest('td').next().next().next()
   .text();
+const perc = (val) => Number(val.replace('%', ''));
 const statMap = ([key, value]) => [key, key === 'Type' ? value : Number(value)];
-const enhMap = ([key, value]) => [key, Number(value.replace('%', ''))];
+const enhMap = ([key, value]) => [key, perc(value)];
 const craftMap = ([key, value]) => [`craft${key}`, Number(value)];
-const setMap = ([key, value]) => [`set${key}`, Number(value)];
+const setMap = ([key, value]) => [`set${key}`, perc(value)];
 
 function statsFromRow($, tHead, valLoc, mapFn) {
   return Object.fromEntries(

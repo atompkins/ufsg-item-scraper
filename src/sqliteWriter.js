@@ -66,6 +66,34 @@ function createTable() {
     , setStamina       integer null
     , setStaminaGain   integer null
     , setGoldGain      integer null
+    , setBanishment       integer null
+    , setBeastSlayer      integer null
+    , setBreaker          integer null
+    , setCriticalHit      integer null
+    , setDisarm           integer null
+    , setDodge            integer null
+    , setDuelist          integer null
+    , setEliteHunter      integer null
+    , setFirstStrike      integer null
+    , setFuryCaster       integer null
+    , setGlorySeeker      integer null
+    , setGreenskinSlayer  integer null
+    , setHoly             integer null
+    , setHypnotize        integer null
+    , setMasterBlacksmith integer null
+    , setMasterCrafter    integer null
+    , setMasterInventor   integer null
+    , setMasterThief      integer null
+    , setNullify          integer null
+    , setOceanic          integer null
+    , setPiercingStrike   integer null
+    , setProtectGold      integer null
+    , setProtection       integer null
+    , setReinforcedArmor  integer null
+    , setSoulless         integer null
+    , setSustain          integer null
+    , setTemporalShift    integer null
+    , setThievery         integer null
   )`);
 }
 
@@ -130,6 +158,34 @@ function prepareStmt() {
     , setStamina
     , setStaminaGain
     , setGoldGain
+    , setBanishment
+    , setBeastSlayer
+    , setBreaker
+    , setCriticalHit
+    , setDisarm
+    , setDodge
+    , setDuelist
+    , setEliteHunter
+    , setFirstStrike
+    , setFuryCaster
+    , setGlorySeeker
+    , setGreenskinSlayer
+    , setHoly
+    , setHypnotize
+    , setMasterBlacksmith
+    , setMasterCrafter
+    , setMasterInventor
+    , setMasterThief
+    , setNullify
+    , setOceanic
+    , setPiercingStrike
+    , setProtectGold
+    , setProtection
+    , setReinforcedArmor
+    , setSoulless
+    , setSustain
+    , setTemporalShift
+    , setThievery
   )
   VALUES (
       $id
@@ -191,6 +247,34 @@ function prepareStmt() {
     , $setStamina
     , $setStaminaGain
     , $setGoldGain
+    , $setBanishment
+    , $setBeastSlayer
+    , $setBreaker
+    , $setCriticalHit
+    , $setDisarm
+    , $setDodge
+    , $setDuelist
+    , $setEliteHunter
+    , $setFirstStrike
+    , $setFuryCaster
+    , $setGlorySeeker
+    , $setGreenskinSlayer
+    , $setHoly
+    , $setHypnotize
+    , $setMasterBlacksmith
+    , $setMasterCrafter
+    , $setMasterInventor
+    , $setMasterThief
+    , $setNullify
+    , $setOceanic
+    , $setPiercingStrike
+    , $setProtectGold
+    , $setProtection
+    , $setReinforcedArmor
+    , $setSoulless
+    , $setSustain
+    , $setTemporalShift
+    , $setThievery
   )`);
 }
 

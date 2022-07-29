@@ -26,7 +26,6 @@ async function processIndexPage({ data }) {
   const itemRows = $('tr:nth-child(2n+3):not(:last-child)', mainTable)
     .get()
     .filter((aRow) => itemTypes($(aRow)));
-  // await itemRows.reduce((p, aRow) => p.then(() => doRows($, aRow)), Promise.resolve(null));
   await Promise.all(itemRows.map((aRow) => doRows($, aRow)));
   return { nextPageLabel, nextPageUrl };
 }

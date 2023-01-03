@@ -94,6 +94,7 @@ function createTable() {
     , setSustain          integer null
     , setTemporalShift    integer null
     , setThievery         integer null
+    , lastSeen            datetime null
   )`);
 }
 
@@ -186,6 +187,7 @@ function prepareStmt() {
     , setSustain
     , setTemporalShift
     , setThievery
+    , lastSeen
   )
   VALUES (
       $id
@@ -275,6 +277,7 @@ function prepareStmt() {
     , $setSustain
     , $setTemporalShift
     , $setThievery
+    , current_timestamp
   )`);
 }
 
